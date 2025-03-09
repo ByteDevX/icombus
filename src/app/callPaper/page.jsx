@@ -62,14 +62,22 @@ export const CallPaper = () => {
             </p>
             <ul className="list-disc ml-6 mb-4">
               <li>
-                <strong>Abstract Submission Deadline:</strong> April 10, 2025
+                <strong>Extended Abstract Submission Deadline:</strong> 5 April,
+                2025
               </li>
               <li>
-                <strong>Full Paper Submission Deadline:</strong> April 30, 2025
+                <strong>Abstract Notification of Acceptance:</strong> 16 April,
+                2025
               </li>
               <li>
-                <strong>Presentation Material Submission Deadline:</strong> May
-                10, 2025
+                <strong>Payment Deadline:</strong> 20 April, 2025
+              </li>
+              <li>
+                <strong>Full Paper Submission Deadline:</strong> 25 April, 2025
+              </li>
+              <li>
+                <strong>Presentation Material Submission Deadline:</strong>
+                10 May, 2025
               </li>
               <li>
                 <strong>Conference Dates:</strong> 30 May, 2025
@@ -101,9 +109,9 @@ export const CallPaper = () => {
           <section className="mb-8">
             <ul className="list-disc ml-6 mb-4">
               <li>
-                Please submit your papers via the{" "}
+                Please submit your abstract papers via the{" "}
                 <a
-                  href="#"
+                  href="https://forms.gle/Jown4xr3Lp2wbTNM9 "
                   className="text-blue-600 underline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -116,10 +124,10 @@ export const CallPaper = () => {
                 For more information about the conference, you are welcome to
                 contact the organizing committee directly via{" "}
                 <a
-                  href="mailto:info@icbmeconf.org"
+                  href="mailto:icombus@ciputra.ac.id"
                   className="text-blue-600 underline"
                 >
-                  info@icbmeconf.org
+                  icombus@ciputra.ac.id
                 </a>
                 .
               </li>

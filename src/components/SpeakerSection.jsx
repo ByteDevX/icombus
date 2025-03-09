@@ -7,12 +7,12 @@ const speakers = [
     name: "Prof. Dennis Cheek, BA, BS, MA, PhD, PhD, FRSA, AAAS.",
     title:
       "Dean, School of Entrepreneurship & Humanities Universitas Ciputra Surabaya",
-    image: "/speaker1.jpeg",
+    image: "/speaker1.jpg",
   },
   {
     name: "Prof. Harry Patria",
     title:
-      "University of Strathclyde, Glasgow; CEO, Chief Data & AI Strategist at Patria & Co",
+      "PhD Researcher at Hunter Centre for Entrepreneurship, Strategy and Innovation, Strathclyde Business School, UK",
     image: "/speaker2.jpeg",
   },
   {

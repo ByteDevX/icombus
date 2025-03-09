@@ -118,6 +118,9 @@ export default function RegistrationFee() {
                   Account Name: Nikita Bella Angelina
                 </p>
                 <p className="text-lg md:text-xl">
+                  As Student Union's Treasurer
+                </p>
+                <p className="text-lg md:text-xl">
                   Account Number: 8630 481 741
                 </p>
                 <p className="mt-2 text-sm italic">For National Participants</p>

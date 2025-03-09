@@ -45,7 +45,7 @@ const Footer = () => {
           <p className="font-medium">Contact Person:</p>
           <p className="font-bold">Jean (WA: +62 822 2897 1236)</p>
           <p className="font-bold">Jonathan (WA: +62 857 9588 2313)</p>
-          <p className="font-bold">Email: icombus@gmail.com</p>
+          <p className="font-bold">Email: icombus@ciputra.ac.id</p>
         </div>
       </div>
     </footer>

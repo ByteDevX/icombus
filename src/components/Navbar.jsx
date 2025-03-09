@@ -1,4 +1,3 @@
-// components/Navbar.jsx
 "use client";
 
 import Image from "next/image";
@@ -16,20 +15,22 @@ const Navbar = () => {
     pathname === href ||
     (pathname?.startsWith("/callPaper") && href === "/callPaper");
 
-  // Link navigasi untuk halaman selain Call for Paper.
+  // Link navigasi umum (TANPA "How to Register" dan "Call for Paper")
   const links = [
     { href: "/", label: "Home" },
     { href: "/rundown", label: "Rundown" },
     { href: "/topic", label: "List of Topics" },
-    { href: "/register", label: "How to Register" },
   ];
+
+  // Link "How to Register" kita pisahkan supaya bisa diatur urutannya
+  const registerLink = { href: "/register", label: "How to Register" };
 
   // Call for Paper dropdown links
   const callPaperLinks = [
     { href: "/callPaper", label: "Call for Paper" },
     { href: "/callPaper/abstractFormat", label: "Abstract Format" },
     { href: "/callPaper/fullPaperFormat", label: "Full Paper Format" },
-    { href: "/callPaper/posterFormat", label: "Poster Format" },
+    // { href: "/callPaper/posterFormat", label: "Poster Format" },
   ];
 
   return (
@@ -46,8 +47,9 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Desktop Menu */}
+        {/* DESKTOP MENU (>= lg) */}
         <div className="hidden lg:flex space-x-8 items-center">
+          {/* Link umum */}
           {links.map((link, index) => (
             <Link
               key={index}
@@ -62,7 +64,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Dropdown untuk Call for Paper */}
+          {/* Dropdown Call for Paper */}
           <div className="relative group">
             <Link
               href="/callPaper"
@@ -88,9 +90,21 @@ const Navbar = () => {
               ))}
             </div>
           </div>
+
+          {/* Link "How to Register" */}
+          <Link
+            href={registerLink.href}
+            className={
+              isActive(registerLink.href)
+                ? "font-bold text-yellow-500 hover:text-yellow-600"
+                : "font-bold text-green-800 hover:text-green-900"
+            }
+          >
+            {registerLink.label}
+          </Link>
         </div>
 
-        {/* Tombol Toggle Mobile */}
+        {/* TOGGLE MOBILE MENU (BURGER BUTTON) */}
         <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -131,10 +145,11 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU (< lg) */}
       {isMenuOpen && (
         <div className="lg:hidden bg-white shadow-md">
           <div className="flex flex-col space-y-2 p-4">
+            {/* Link umum */}
             {links.map((link, index) => (
               <Link
                 key={index}
@@ -150,7 +165,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Dropdown untuk Call for Paper pada Mobile */}
+            {/* Dropdown Call for Paper */}
             <div className="flex flex-col">
               <div className="flex justify-between items-center">
                 <Link
@@ -186,6 +201,8 @@ const Navbar = () => {
                   </svg>
                 </button>
               </div>
+
+              {/* Isi dropdown */}
               {isCallDropdownOpen && (
                 <div className="pl-4 mt-2 flex flex-col space-y-2">
                   {callPaperLinks.slice(1).map((link, index) => (
@@ -205,6 +222,19 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+
+            {/* Link "How to Register" */}
+            <Link
+              href={registerLink.href}
+              onClick={() => setIsMenuOpen(false)}
+              className={
+                isActive(registerLink.href)
+                  ? "font-bold text-yellow-500 hover:text-yellow-600"
+                  : "font-bold text-green-800 hover:text-green-900"
+              }
+            >
+              {registerLink.label}
+            </Link>
           </div>
         </div>
       )}

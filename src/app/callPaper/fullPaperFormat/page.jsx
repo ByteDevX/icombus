@@ -113,11 +113,8 @@ export const FullPaperFormat = () => {
             </p>
             <p className="mb-4">
               <a
-                href="/ICOMBUS-Fullpaper-Format.docx"
-                download
+                href="https://docs.google.com/uc?export=download&id=1utNO2u_RSXbss8x4CMLfntE1n_V10G4O"
                 className="inline-block bg-[#FFD449] text-[#1F4923] font-semibold px-4 py-2 rounded hover:opacity-90 mt-2"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 ICOMBUS-Fullpaper-Format.docx
               </a>{" "}
@@ -128,8 +125,17 @@ export const FullPaperFormat = () => {
           <section className="mb-6">
             <h2 className="text-2xl font-semibold mb-4">Submission Method</h2>
             <p className="mb-4">
-              Please send your paper via Online Submission Form. Should you have
-              any questions about the submission, please contact us at{" "}
+              Please send your paper via the{" "}
+              <a
+                href="https://forms.gle/Jown4xr3Lp2wbTNM9 "
+                className="text-blue-600 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ONLINE SUBMISSION FORM
+              </a>
+              . Should you have any questions about the submission, please
+              contact us at{" "}
               <a
                 href="mailto:icombus@ciputra.ac.id"
                 className="text-blue-600 underline"

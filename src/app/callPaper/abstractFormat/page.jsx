@@ -43,11 +43,8 @@ const AbstractFormat = () => {
             Download the abstract template for submission details:
             <br />
             <a
-              href="/ICOMBUS-Abstract-Format.docx"
-              download
+              href="https://docs.google.com/uc?export=download&id=1PxE4SIlx8it9pyBk-_sfntnf0dIGMRtR"
               className="inline-block bg-[#FFD449] text-[#1F4923] font-semibold px-4 py-2 rounded hover:opacity-90 mt-2"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               ICOMBUS-Abstract-Format.docx
             </a>{" "}
